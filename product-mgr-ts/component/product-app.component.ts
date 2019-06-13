@@ -11,6 +11,7 @@ export class ProductComponent{
 
 }
 
+
 let productComp = new ProductComponent(new ProductService());
 
 productComp.productSvc.initializeList();

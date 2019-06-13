@@ -10,7 +10,7 @@ export class ProductService {
         let p3 = new Product(3, "T003","medium damp droid", 49.50);
 
     }
-
+   
     listProducts() {
         this.products.forEach(p => {
             console.log(p.about);
