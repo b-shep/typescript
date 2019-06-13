@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var Friend = /** @class */ (function () {
     function Friend(n, a, e, b) {
         this.fName = n;

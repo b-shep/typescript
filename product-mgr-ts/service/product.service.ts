@@ -1,4 +1,4 @@
-import {Product} from "../model/product";
+import {Product} from "../model/product.class";
 
 export class ProductService {
     products: Product[] = [];
@@ -18,6 +18,35 @@ export class ProductService {
     }
 
     getProduct(id: number): void {
-        
+        let product: Product[] = new Array();
+        this.products.forEach(p => {
+            if (id == p.id){
+                product.push(p);
+            }
+        });
+
+        if (product.length != 0){
+            console.log("Product Found: " + product[0].about);
+        } else{
+            console.log("No product found for id: " + id);
+        }
     }
+
+    addProduct(newProduct: Product){
+        this.products.push(newProduct);
+    }
+
+    removeById(id: number){
+        this.products.forEach(p => {
+            if (p.id == id){
+                let index: number = this.products.indexOf(p);
+                this.products.splice(index,1);
+            }
+        })
+    }
+
+
+
+
+
 }

@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var Friend_1 = require("./Friend");
 var friends = new Array();
 var f1 = new Friend_1.Friend("Bill", 80, "bill@aol.gov", false);
